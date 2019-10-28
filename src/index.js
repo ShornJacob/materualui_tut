@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Button from "@material-ui/core/Button";
 import { Helmet } from "react-helmet";
 import 'typeface-roboto';
 import Types from './pages/Types'
+import Button from './pages/Button'
+import { Router, Link } from "@reach/router"
 
 function App() {
   return (
@@ -14,11 +15,18 @@ function App() {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
         />
       </Helmet>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
 
-      <Types />
+
+      <nav>
+      <Link to="/">/</Link><br />
+      <Link to="types">Types</Link><br />
+      <Link to="button">Button</Link><br />
+    </nav>
+
+      <Router >
+          <Button path="/button"/>
+          <Types path="/types" />
+      </Router>
     </div>
   );
 }
