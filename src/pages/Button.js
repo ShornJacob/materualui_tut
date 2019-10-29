@@ -3,8 +3,11 @@ import Button from "@material-ui/core/Button";
 
 export default function Types() {
   return (
-    <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+    <div>
+         <Button>default props</Button>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+    </div>
   );
 }
