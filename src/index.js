@@ -14,6 +14,8 @@ import ContainerPage from './pages/ContainerPage'
 import GridPage from './pages/GridPage'
 import FluidPage from './pages/FluidGrid'
 import GridBreak from './pages/GridBreak'
+import AppBar from './pages/AppBar'
+import AppBar2 from './pages/AppBar2'
 import { Router, Link } from "@reach/router"
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
       <Link to="grid">Grid</Link><br />
       <Link to="fluidgrid">Fluidgrid</Link><br />
       <Link to="gridbreak">GridBreak</Link><br />
+      <Link to="appbar">AppBar</Link><br />
+      <Link to="appbar2">appbar2</Link><br />
     </nav>
 
       <Router >
@@ -56,6 +60,8 @@ function App() {
           <GridPage path="/grid" />
           <FluidPage path="/fluidgrid" />
           <GridBreak path="/gridbreak" />
+          <AppBar path="/appbar" />
+          <AppBar2 path="/appbar2" />
       </Router>
     </div>
   );
