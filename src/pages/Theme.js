@@ -1,5 +1,5 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+import {Typography} from "@material-ui/core"
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -31,3 +31,7 @@ export default function Types() {
     </ThemeProvider>
   );
 }
+
+//varaint	Applies the theme typography styles.
+//https://material-ui.com/api/typography/
+//The component used for the root node. Either a string to use a DOM element or a component. By default, it maps the variant to a good default headline component.
