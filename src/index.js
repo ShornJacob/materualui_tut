@@ -11,6 +11,9 @@ import BreadCrumbs from './pages/BreadCrumbs'
 import Palette from './pages/Palette'
 import BoxPage from './pages/BoxPage'
 import ContainerPage from './pages/ContainerPage'
+import GridPage from './pages/GridPage'
+import FluidPage from './pages/FluidGrid'
+import GridBreak from './pages/GridBreak'
 import { Router, Link } from "@reach/router"
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
       <Link to="palette">Palette</Link><br />
       <Link to="box">Box</Link><br />
       <Link to="container">Container</Link><br />
+      <Link to="grid">Grid</Link><br />
+      <Link to="fluidgrid">Fluidgrid</Link><br />
+      <Link to="gridbreak">GridBreak</Link><br />
     </nav>
 
       <Router >
@@ -47,6 +53,9 @@ function App() {
           <Palette path="/palette" />
           <BoxPage path="/box" />
           <ContainerPage path="/container" />
+          <GridPage path="/grid" />
+          <FluidPage path="/fluidgrid" />
+          <GridBreak path="/gridbreak" />
       </Router>
     </div>
   );
