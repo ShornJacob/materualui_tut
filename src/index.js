@@ -16,6 +16,7 @@ import FluidPage from './pages/FluidGrid'
 import GridBreak from './pages/GridBreak'
 import AppBar from './pages/AppBar'
 import AppBar2 from './pages/AppBar2'
+import SimpleMenu from './pages/SimpleMenu'
 import { Router, Link } from "@reach/router"
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Link to="gridbreak">GridBreak</Link><br />
       <Link to="appbar">AppBar</Link><br />
       <Link to="appbar2">appbar2</Link><br />
+      <Link to="simplemenu">SimpleMenu</Link><br />
     </nav>
 
       <Router >
@@ -62,6 +64,7 @@ function App() {
           <GridBreak path="/gridbreak" />
           <AppBar path="/appbar" />
           <AppBar2 path="/appbar2" />
+          <SimpleMenu path="/simplemenu" />
       </Router>
     </div>
   );
