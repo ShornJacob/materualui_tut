@@ -17,6 +17,8 @@ import GridBreak from './pages/GridBreak'
 import AppBar from './pages/AppBar'
 import AppBar2 from './pages/AppBar2'
 import SimpleMenu from './pages/SimpleMenu'
+import SelectedMenu from './pages/SelectedMenu'
+import SimpleList from './pages/SimpleList'
 import { Router, Link } from "@reach/router"
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
       <Link to="appbar">AppBar</Link><br />
       <Link to="appbar2">appbar2</Link><br />
       <Link to="simplemenu">SimpleMenu</Link><br />
+      <Link to="selectedmenu">Selected Menu</Link><br />
+      <Link to="simplelist">Selected List</Link><br />
     </nav>
 
       <Router >
@@ -65,6 +69,8 @@ function App() {
           <AppBar path="/appbar" />
           <AppBar2 path="/appbar2" />
           <SimpleMenu path="/simplemenu" />
+          <SelectedMenu path="/selectedmenu" />
+          <SimpleList path="/simplelist" />
       </Router>
     </div>
   );
